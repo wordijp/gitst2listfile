@@ -8,8 +8,8 @@
 
 #define endl "\r\n"
 
-// git st‚ÌŒ‹‰Ê‚ğPaper Plane XUI(ˆÈ‰ºPPX)‚ÌListFile‚Æ‚µ‚Ä‘‚«o‚µA
-// PPXã‚ÅGit‚ÌƒRƒ}ƒ“ƒh‚ğ‘€ìo—ˆ‚é‚æ‚¤‚É‚·‚é•â•ƒc[ƒ‹‚Å‚·B
+// git stã®çµæœã‚’Paper Plane XUI(ä»¥ä¸‹PPX)ã®ListFileã¨ã—ã¦æ›¸ãå‡ºã—ã€
+// PPXä¸Šã§Gitã®ã‚³ãƒãƒ³ãƒ‰ã‚’æ“ä½œå‡ºæ¥ã‚‹ã‚ˆã†ã«ã™ã‚‹è£œåŠ©ãƒ„ãƒ¼ãƒ«ã§ã™ã€‚
 
 using namespace std;
 
@@ -63,7 +63,7 @@ int main(int argc, char* argv[])
 		string line = str;
 		if (line[0] != '#') continue;
 //		cout << line << endl;
-		// ƒ‚[ƒhƒZƒŒƒNƒg
+		// ãƒ¢ãƒ¼ãƒ‰ã‚»ãƒ¬ã‚¯ãƒˆ
 		if (line.find("# Changes to be committed:") != string::npos) {
 			mode = Mode::ChangesCommitted;
 			continue;
@@ -80,7 +80,7 @@ int main(int argc, char* argv[])
 			continue;
 		}
 		
-		// (use git .. •”•ª‚ğæ“¾‚·‚é
+		// (use git .. éƒ¨åˆ†ã‚’å–å¾—ã™ã‚‹
 		if (line.find("(use \"git ") != string::npos) {
 			useList.insert(make_pair(mode, line));
 			continue;
