@@ -23,7 +23,7 @@ $(TARGET): $(OBJS)
 clean:
 	rm $(TARGET)
 	rm -Rf obj
-	
+
 # -----------------------------------------------
 
 .PHONY: clean

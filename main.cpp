@@ -1,3 +1,5 @@
+#include <Windows.h>
+
 #include <iostream>
 #include <string>
 #include <vector>
@@ -151,7 +153,11 @@ int main(int argc, char* argv[])
 		}
 	}
 	
+	char wd[1024];
+	GetCurrentDirectory(1024, wd);
+
 	cout << ";ListFile" << endl;
+	cout << ";Base=" << wd << endl;
 
 	// committedFiles
 	{
