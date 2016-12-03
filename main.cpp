@@ -8,7 +8,6 @@
 
 #include <cassert>
 
-#define endl "\r\n"
 
 // git stの結果をPaper Plane XUI(以下PPX)のListFileとして書き出し、
 // PPX上でGitのコマンドを操作出来るようにする補助ツールです。
