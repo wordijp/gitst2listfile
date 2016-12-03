@@ -30,7 +30,7 @@ git statusの結果をPaper Plane xUIのListFileへと変換します。
 
 	> git status | gitst2listfile
     ;ListFile
-    ;Base=E:\work\C++\gittest
+    ;Base=E:\work\C++\HelloWorld
     ======== Changes not staged for commit: ===========.notstaged
       (use "git add/rm <file>..." to update what will be committed).notstaged
       (use "git checkout -- <file>..." to discard changes in working directory).notstaged
